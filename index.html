@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Inter</title>
+    
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <!-- Custom CSS Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- 
+        ========================  P R E L O A D E R  =======================
+    -->
+    <div id="preloader">
+        <img loading="lazy" src="./assets/preloader/loader (2).gif" alt="preloader">
+    </div>
+
+    <!-- 
+        ========================  W R A P P E R  =======================
+    -->
+    <section id="wrapper">
+        <!-- 
+            ========================  S I D E B A R  =======================
+        -->
+        <section id="sidebar">
+            <div class="sidebar-brand">
+                <span class="btn btn-primary mr-2"><i class="fas fa-align-right"></i></span>
+                Inter
+            </div>
+
+            <div class="media p-3 rounded bg-light">
+                <div class="rounded-circle shadow-sm bg-white d-flex justify-content-center align-items-center" style="height: 35px; width: 35px;">
+                    <i class="fas fa-grin-hearts text-warning" style="font-size: 18px;"></i>
+                </div>
+
+                <div class="media-body">
+                    <div class="row m-0 justify-content-between">
+                        <div class="col-9">                                
+                            <h6 class="font-weight-bold mb-0">Fine Arts</h6>
+                            <span class="text-muted">Workspace</span>
+                        </div>
+                        <div class="col-2">
+                            <i class="fas fa-retweet text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="list-unstyled sidebar-nav">
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Dashboard Link -->
+                    <a href="index.html" class="sidebar-link active">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Commmunity Link -->
+                    <a href="community.html" class="sidebar-link">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Inspirations Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-lightbulb"></i>
+                        Inspirations
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Chat Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-comments"></i>
+                        Chat
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Settings Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="shortcut text-muted">Shortcuts</h6>
+
+            <ul class="list-unstyled sidebar-nav">
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Scan Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-qrcode"></i>
+                        Scan
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Draw Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-pen-nib"></i>
+                        Draw
+                    </a>
+                </li>
+
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Add shortcut Link -->
+                    <a href="" class="sidebar-link">
+                        <i class="fas fa-plus"></i>
+                        Add shortcut
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Sidebar Footer -->
+            <div class="list-unstyled sidebar-footer">
+                <!-- Sidebar Item -->
+                <li class="sidebar-item">
+                    <!-- Scan Link -->
+                    <a href="" class=" d-block btn btn-primary py-3">
+                        <i class="fas fa-plus"></i>
+                        New Project
+                    </a>
+                </li>
+            </div>
+        </section>
+
+        <!-- 
+            ========================  M A I N - P A G E  =======================
+        -->
+        <section id="mainpage">
+            <!-- 
+                ========================  N A V B A R  =======================
+            -->
+            <nav class="navbar navbar-light py-3">
+                <a href="javascript:void(0)" id="sidebar-toggle" class="sidebar-brand">
+                    <span class="btn btn-primary mr-2 d-block d-xl-none"><i class="fas fa-align-right"></i></span>
+                </a>
+
+                <!-- navbar - nav -->
+                <ul class="navbar-nav d-flex flex-row ml-auto">
+                    <!-- nav-item -->
+                    <li class="nav-item">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" class="nav-link search bg-white shadow-sm">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- N O T I F I C A T I O N  -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link bg-white shadow-sm">
+                            <i class="far fa-bell"></i>
+                            <span class="badge badge-pill badge-danger">3</span>
+                        </a>
+                        <div class="dropdown-menu notification shadow-sm">
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            <!-- notification -->
+                            <a href="javascript:void(0)" class="dropdown-item d-flex">
+                                <!-- notification image -->
+                                <span class="image align-self-start">
+                                    <img src="./assets/avatar/2.jpeg" class="img-fluid rounded-circle" width="40px" height="40px" alt="">
+                                </span>
+                                <!-- notification text -->
+                                <div class="ml-3 d-flex w-100 justify-content-between">
+                                    <div>
+                                        <!-- notification title -->
+                                        <h6 class="font-weight-bold mb-0">
+                                            Assignment 
+                                        </h6>
+                                        <!-- notification desc -->
+                                        <p class="text-muted mb-n1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eaque! Debitis ea aut aliquid, aliquam.
+                                        </p>
+                                    </div>
+                                    <!-- notification time -->
+                                    <span class="time">
+                                        12:00pm
+                                    </span>
+                                </div>
+                            </a>
+
+                            
+                        </div>
+                    </li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown border-left border-right mx-2 p-0"></li>
+
+                    <!-- nav-item -->
+                    <li class="nav-item dropdown">
+                        <!-- search btn -->
+                        <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link">
+                            <img src="./assets/avatar/4.png" class="rounded-circle" width="40px" height="40px" alt="">
+                        </a>
+                        <div class="dropdown-menu shadow-sm">
+                            <p class="mb-0 border-bottom name">Hello Daniel</p>
+                            <a href="#" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 
+                ========================  H E A D E R  =======================
+            -->
+            <header>
+                <div class="container-fluid">
+                    <!-- callout -->
+                    <h1>Hello Daniel</h1>
+                    <!-- text -->
+                    <p class="text-muted">Do you already know what you will design today? Choose &nbsp; <!-- icon --> <span class="bg-white shadow-sm px-3 py-1 rounded"> <i class="fas fa-lightbulb"></i></span> &nbsp; to get inspired &nbsp; <!-- emoji icon --> <i class="fas fa-grin-squint text-warning" style="font-size: 18px;"></i>. </p>
+                </div>
+            </header>
+
+
+            <!-- 
+                ======================== P A G E     I T E M S  =======================
+            -->
+            <section class="pageitems">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- add new item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body my-5 px-lg-5 text-center">
+                                    <!-- Avatars -->
+                                    <div class="avatars">
+                                        <!-- avatar 1 -->
+                                        <span class="avatar avatar-1">
+                                            <img src="./assets/avatar/1.jpeg" alt="" class="img-fluid rounded-circle">
+                                        </span>
+                                        <!-- avatar 2 -->
+                                        <span class="avatar avatar-2">
+                                            <img src="./assets/avatar/2.jpeg" alt="" class="img-fluid rounded-circle">
+                                        </span>
+                                        <!-- avatar 3 -->
+                                        <span class="avatar avatar-3">
+                                            <img src="./assets/avatar/3.jpeg" alt="" class="img-fluid rounded-circle">
+                                        </span>
+                                        <!-- avatar 4 -->
+                                        <span class="avatar avatar-4">
+                                            <img src="./assets/avatar/4.png" alt="" class="img-fluid rounded-circle">
+                                        </span>
+                                        <!-- avatar 5 -->
+                                        <span class="avatar avatar-5">
+                                            <img src="./assets/avatar/1.jpeg" alt="" class="img-fluid rounded-circle">
+                                        </span>
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-4">Add new project</h4>
+                                    <!-- card-text -->
+                                    <p class="card-text text-muted">
+                                        Still not enough? Click on a tile to add a new project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- card buttons -->
+                                    <div class="card-buttons text-right">
+                                        <button class="btn btn-light">
+                                            <i class="far fa-star text-muted"></i>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- card image -->
+                                    <div class="card-img">
+                                        <img src="./assets/avatar/1.jpeg" width="40px" alt="" class="fluid rounded-circle">
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-3">Friendly Painters</h4>
+                                    <!-- card text -->
+                                    <p class="card-text text-muted">
+                                       Within the exercises, we design a room in a Scandinavian style.
+                                    </p>
+
+                                    <!-- card info -->
+                                    <div class="card-info mt-4">
+                                        <!-- task -->
+                                        <p class="text-muted mb-1">
+                                            <i class="fas fa-qrcode"></i>
+                                            &nbsp;
+                                            Task: 
+                                            <span>
+                                                Practice
+                                            </span>
+                                        </p>
+                                        <!-- date -->
+                                        <p class="text-muted">
+                                            <i class="far fa-calendar-alt"></i>
+                                            &nbsp;
+                                            Date: 
+                                            <span>
+                                                01.08.2020
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- users -->
+                                    <div class="users float-right">
+                                        <!-- user 1 img -->
+                                        <span class="user user-4">
+                                            <img src="./assets/avatar/4.png" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 2 img -->
+                                        <span class="user user-3">
+                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-2">
+                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-1">
+                                            <img src="./assets/avatar/1.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- card buttons -->
+                                    <div class="card-buttons text-right">
+                                        <button class="btn btn-light">
+                                            <i class="far fa-star text-muted"></i>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- card image -->
+                                    <div class="card-img">
+                                        <img src="./assets/avatar/2.jpeg" width="40px" alt="" class="fluid rounded-circle">
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-3">Dressing Room</h4>
+                                    <!-- card text -->
+                                    <p class="card-text text-muted">
+                                       Wonderful news! Lets arrange the hosts and guests dressing rooms!
+                                    </p>
+
+                                    <!-- card info -->
+                                    <div class="card-info mt-4">
+                                        <!-- task -->
+                                        <p class="text-muted mb-1">
+                                            <i class="fas fa-qrcode"></i>
+                                            &nbsp;
+                                            Task: 
+                                            <span>
+                                                Commercial Project
+                                            </span>
+                                        </p>
+                                        <!-- date -->
+                                        <p class="text-muted">
+                                            <i class="far fa-calendar-alt"></i>
+                                            &nbsp;
+                                            Date: 
+                                            <span>
+                                                01.08.2020
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- users -->
+                                    <div class="users float-right">
+                                        <!-- user 1 img -->
+                                        <span class="user user-4">
+                                            <img src="./assets/avatar/4.png" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 2 img -->
+                                        <span class="user user-3">
+                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-2">
+                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-1">
+                                            <span class="badge badge-primary badge-pill d-inline-flex justify-content-center align-items-center border border-white" style="width: 25px; height: 25px;">6</span>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- card buttons -->
+                                    <div class="card-buttons text-right">
+                                        <button class="btn btn-light">
+                                            <i class="far fa-star text-muted"></i>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- card image -->
+                                    <div class="card-img">
+                                        <img src="./assets/avatar/4.png" width="40px" alt="" class="fluid rounded-circle">
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-3">Hedgehogs</h4>
+                                    <!-- card text -->
+                                    <p class="card-text text-muted">
+                                       These cuties would need a new place where they can stay with their owner
+                                    </p>
+
+                                    <!-- card info -->
+                                    <div class="card-info mt-4">
+                                        <!-- task -->
+                                        <p class="text-muted mb-1">
+                                            <i class="fas fa-qrcode"></i>
+                                            &nbsp;
+                                            Task: 
+                                            <span>
+                                                Practice
+                                            </span>
+                                        </p>
+                                        <!-- date -->
+                                        <p class="text-muted">
+                                            <i class="far fa-calendar-alt"></i>
+                                            &nbsp;
+                                            Date: 
+                                            <span>
+                                                01.08.2020
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- users -->
+                                    <div class="users float-right">
+                                        
+                                        <!-- user 2 img -->
+                                        <span class="user user-3">
+                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-2">
+                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-1">
+                                            <img src="./assets/avatar/1.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- card buttons -->
+                                    <div class="card-buttons text-right">
+                                        <button class="btn btn-light">
+                                            <i class="far fa-star text-muted"></i>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- card image -->
+                                    <div class="card-img">
+                                        <img src="./assets/avatar/4.png" width="40px" alt="" class="fluid rounded-circle">
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-3">Dr. Stefan</h4>
+                                    <!-- card text -->
+                                    <p class="card-text text-muted">
+                                       Mr. Doctor needs a new office, lets do something nice!
+                                       <!-- <span class="d-none d-xl-block">
+                                           <br><br>
+                                       </span> -->
+                                    </p>
+
+                                    <!-- card info -->
+                                    <div class="card-info mt-4">
+                                        <!-- task -->
+                                        <p class="text-muted mb-1">
+                                            <i class="fas fa-qrcode"></i>
+                                            &nbsp;
+                                            Task: 
+                                            <span>
+                                                Commercial Project
+                                            </span>
+                                        </p>
+                                        <!-- date -->
+                                        <p class="text-muted">
+                                            <i class="far fa-calendar-alt"></i>
+                                            &nbsp;
+                                            Date: 
+                                            <span>
+                                                01.08.2020
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- users -->
+                                    <div class="users float-right">
+                                        
+                                        <!-- user 2 img -->
+                                        <span class="user user-3">
+                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-2">
+                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-1">
+                                            <img src="./assets/avatar/1.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item card -->
+                        <div class="col-md-4 col-sm-6">
+                            <!-- card -->
+                            <div class="card rounded shadow-sm mb-4">
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- card buttons -->
+                                    <div class="card-buttons text-right">
+                                        <button class="btn btn-light">
+                                            <i class="far fa-star text-muted"></i>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-ellipsis-h text-muted"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- card image -->
+                                    <div class="card-img">
+                                        <img src="./assets/avatar/2.jpeg" width="40px" alt="" class="fluid rounded-circle">
+                                    </div>
+
+                                    <!-- card title -->
+                                    <h4 class="card-title mt-3">Ho, Ho, Ho!</h4>
+                                    <!-- card text -->
+                                    <p class="card-text text-muted">
+                                       Christmas is coming! Will we try to prepare something for this occasion?
+                                    </p>
+
+                                    <!-- card info -->
+                                    <div class="card-info mt-4">
+                                        <!-- task -->
+                                        <p class="text-muted mb-1">
+                                            <i class="fas fa-qrcode"></i>
+                                            &nbsp;
+                                            Task: 
+                                            <span>
+                                                Practice
+                                            </span>
+                                        </p>
+                                        <!-- date -->
+                                        <p class="text-muted">
+                                            <i class="far fa-calendar-alt"></i>
+                                            &nbsp;
+                                            Date: 
+                                            <span>
+                                                01.08.2020
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- users -->
+                                    <div class="users float-right">
+                                        
+                                        <!-- user 2 img -->
+                                        <span class="user user-3">
+                                            <img src="./assets/avatar/3.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-2">
+                                            <img src="./assets/avatar/2.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        <!-- user 3 img -->
+                                        <span class="user user-1">
+                                            <img src="./assets/avatar/1.jpeg" width="25px" alt="" class="img-fluid rounded-circle border border-white">
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <a href="javascript:void(0)" class="sidebar-overlay"></a>
+
+
+
+        </section>
+    </section>
+
+
+    
+
+    <!-- jQuery Link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS Link -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
